@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityes.LoginActivity"
+    android:background="@color/colorBlueLight">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/base"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/login_phone_input"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        android:padding="10dp"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Номер телефона" />
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        android:padding="10dp"
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Пароль" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:backgroundTint="@color/colorPink"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/base"
+        android:text="Войти"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login_password_input"
+        android:layout_marginTop="10dp">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/login_check_box"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Запомнить аккаунт"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlue"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"
+            />
+
+        <com.rey.material.widget.TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Забыли пароль?"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="25dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
